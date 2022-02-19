@@ -1,0 +1,42 @@
+.clearfix::after{
+	clear: both;
+	display: block;
+}
+
+@keyframes circle {
+    0% {
+        left: 0%;
+    }
+    50% {
+        border-radius: 0%;
+    }
+    100% {
+        left: 50%;
+    }
+}
+
+.button_1 {
+    background-color: cadetblue;
+    color: black;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.button_1:hover {
+    top: 5px;
+    box-shadow: 5px 5px 10px black;
+    background-color: burlywood;
+    color: cadetblue;
+}
+
+.animation_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: chartreuse;
+    position: relative;
+    left: 0;
+    animation-name: circle;
+    animation-duration: 2.5s;
+}
